@@ -120,6 +120,10 @@ never fires for `Ctrl+O`, `F5` or `Ctrl+F` — re-checked live 2026-11-25
 with the hook and the table disabled, the event log stayed empty. Do not
 rewrite it back to `AcceleratorKeyPressed` — it does not work.
 
+## Support
+
+If CompactMdViewer saves you time, you can [support its development](https://donatello.to/ilwsm) — one-time, any amount. Crypto (USDT and others) and cards are accepted.
+
 ## License
 
 MIT — see [LICENSE](LICENSE). If you use it, a star is welcome, and

@@ -1,0 +1,51 @@
+# Build outputs (anchored to the repo root: a bare "build/" would also
+# match third_party/wv2/build, which holds files the build needs).
+/cmake-build-*/
+/build-cmake-*/
+/build/
+/out/
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.user
+.vs/
+
+# CLion
+/.idea/
+
+# Runtime files (personal geometry/theme, next to the exe)
+*.ini
+
+# Original dependency archives (only the unpacked files are tracked).
+*.zip
+*.nupkg
+
+# third_party: only the files the build actually uses are tracked.
+# md4c: keep src/, drop tests, tools, scripts and CI.
+third_party/md4c/md4c-release-0.5.3/.github/
+third_party/md4c/md4c-release-0.5.3/md2html/
+third_party/md4c/md4c-release-0.5.3/scripts/
+third_party/md4c/md4c-release-0.5.3/test/
+# WebView2 SDK: keep the headers and the x64 static loader only.
+# (LICENSE.txt / NOTICE.txt are kept for attribution.)
+third_party/wv2/.signature.p7s
+third_party/wv2/Microsoft.Web.WebView2.nuspec
+third_party/wv2/WebView2.idl
+third_party/wv2/WebView2.tlb
+third_party/wv2/\[Content_Types\].xml
+third_party/wv2/buildTransitive/
+third_party/wv2/build/*.targets
+third_party/wv2/build/*.xml
+third_party/wv2/build/native/*.targets
+third_party/wv2/lib/
+third_party/wv2/lib_manual/
+third_party/wv2/package/
+third_party/wv2/runtimes/
+third_party/wv2/tools/
+third_party/wv2/_rels/
+third_party/wv2/build/native/arm64/
+third_party/wv2/build/native/x86/
+third_party/wv2/build/native/include-winrt/
+third_party/wv2/build/native/x64/*
+!third_party/wv2/build/native/x64/WebView2LoaderStatic.lib
